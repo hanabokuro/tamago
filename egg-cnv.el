@@ -635,6 +635,7 @@ mode, if non-NIL."
 				  egg-conversion-major-separator))))
     (setq len (length converted))
     (egg-remove-all-text-properties 0 len converted)
+    (cursor-sensor-mode)
     (add-text-properties 0 len
 			 (list 'read-only          t
 			       (egg-bunsetsu-info) bunsetsu
